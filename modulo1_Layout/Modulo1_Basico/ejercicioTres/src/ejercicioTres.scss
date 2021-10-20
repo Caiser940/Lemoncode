@@ -1,0 +1,72 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.lemoncode {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        padding: 0rem;
+        background-color: rgb(26, 155, 155);
+        color: white;
+        margin-top: 0.3rem;
+
+        li {
+            width: 100%;
+            padding: 1rem;
+            text-decoration: none;
+            a {
+                font-size: 1.1rem;
+            }
+            &:hover {
+                background-color: rgb(13, 71, 71);
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    nav {
+        ul {
+            flex-direction: column;
+            li {
+                width: auto;
+            }
+        }
+    }
+}
+
+/*
+@media (max-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
+        ul {
+            display: flex;
+            list-style-type: none;
+            width: 100%;
+            padding: 0rem;
+            background-color: rgb(26, 155, 155);
+            color: white;
+            flex-direction: column;
+            li{
+                width: auto;
+                padding: 1rem;
+                text-decoration: none;
+                &:hover {
+                    background-color: rgb(13, 71, 71);
+                }
+            }
+        }
+    }
+  }
+  */
