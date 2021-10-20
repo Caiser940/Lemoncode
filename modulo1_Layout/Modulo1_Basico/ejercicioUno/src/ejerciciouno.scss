@@ -1,0 +1,95 @@
+$bgcolor: purple;
+$bgcolorred: red;
+$bgcolorgreen: green;
+$bgcolorblue: blue;
+$bgcolororange: orange;
+
+div {
+  .box {
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    padding: 2rem;
+    margin: 0.2rem 0.5rem;
+    text-align: center;
+  }
+}
+
+@for $x from 1 through 4 {
+  .container-#{$x} {
+    display: flex;
+    align-items: center;
+    @if $x == 1 {
+      @for $i from 1 through 4 {
+        .darken-#{$i} {
+          $a: $i * 10%;
+          background-color: darken($bgcolorred, $a);
+        }
+        .lighten-#{$i} {
+          $a: $i * 10%;
+          background-color: lighten($bgcolorred, $a);
+        }
+      }
+      .base-color {
+        background-color: $bgcolorred;
+      }
+    } @else if $x == 2 {
+      @for $i from 1 through 4 {
+        .darken-#{$i} {
+          $a: $i * 10%;
+          background-color: darken($bgcolorblue, $a);
+        }
+        .lighten-#{$i} {
+          $a: $i * 10%;
+          background-color: lighten($bgcolorblue, $a);
+        }
+      }
+      .base-color {
+        background-color: $bgcolorblue;
+      }
+    } @else if $x == 3 {
+      @for $i from 1 through 4 {
+        .darken-#{$i} {
+          $a: $i * 10%;
+          background-color: darken($bgcolorgreen, $a);
+        }
+        .lighten-#{$i} {
+          $a: $i * 10%;
+          background-color: lighten($bgcolorgreen, $a);
+        }
+      }
+      .base-color {
+        background-color: $bgcolorgreen;
+      }
+    } @else if $x == 4 {
+      @for $i from 1 through 4 {
+        .darken-#{$i} {
+          $a: $i * 10%;
+          background-color: darken($bgcolororange, $a);
+        }
+        .lighten-#{$i} {
+          $a: $i * 10%;
+          background-color: lighten($bgcolororange, $a);
+        }
+      }
+      .base-color {
+        background-color: $bgcolororange;
+      }
+    } @else {
+      @for $i from 1 through 4 {
+        .darken-#{$i} {
+          $a: $i * 10%;
+          background-color: darken($bgcolor, $a);
+        }
+        .lighten-#{$i} {
+          $a: $i * 10%;
+          background-color: lighten($bgcolor, $a);
+        }
+      }
+      .base-color {
+        background-color: $bgcolor;
+      }
+    }
+  }
+}
+

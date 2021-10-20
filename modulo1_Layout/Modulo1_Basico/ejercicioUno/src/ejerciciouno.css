@@ -1,0 +1,54 @@
+div .box {
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+  padding: 2rem;
+  margin: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+.container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-1 .darken-1 {
+  background-color: #cc8400;
+}
+
+.container-1 .lighten-1 {
+  background-color: #ffb733;
+}
+
+.container-1 .darken-2 {
+  background-color: #996300;
+}
+
+.container-1 .lighten-2 {
+  background-color: #ffc966;
+}
+
+.container-1 .darken-3 {
+  background-color: #664200;
+}
+
+.container-1 .lighten-3 {
+  background-color: #ffdb99;
+}
+
+.container-1 .darken-4 {
+  background-color: #332100;
+}
+
+.container-1 .lighten-4 {
+  background-color: #ffedcc;
+}
+
+.container-1 .base-color {
+  background-color: orange;
+}
+/*# sourceMappingURL=ejerciciouno.css.map */
